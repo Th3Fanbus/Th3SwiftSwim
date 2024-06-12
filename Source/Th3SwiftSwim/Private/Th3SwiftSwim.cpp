@@ -49,5 +49,5 @@ void FTh3SwiftSwimModule::StartupModule()
 void FTh3SwiftSwimModule::ShutdownModule()
 {
 }
-	
+
 IMPLEMENT_MODULE(FTh3SwiftSwimModule, Th3SwiftSwim)
