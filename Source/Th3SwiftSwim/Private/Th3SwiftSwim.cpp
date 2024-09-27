@@ -17,7 +17,7 @@ public:
 			if (self->GetIsSprinting()) {
 				Result = FMath::Max(Result, self->mMaxSprintSpeed);
 				AFGJumpingStilts* Stilts = self->mCachedJumpingStilts;
-				if (IsValid(Stilts) and IsValid(Stilts->GetInstigator())) {
+				if (IsValid(Stilts) && IsValid(Stilts->GetInstigator())) {
 					Result = Stilts->GetAdjustedMaxSpeed(self->mMaxSprintSpeed);
 				}
 			}
@@ -41,7 +41,7 @@ public:
 
 void FTh3SwiftSwimModule::StartupModule()
 {
-	if (not WITH_EDITOR) {
+	if (!WITH_EDITOR) {
 		HFGCharacterMovementComponent::RegisterHooks();
 	}
 }
